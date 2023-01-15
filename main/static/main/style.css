@@ -9,6 +9,9 @@
 body {
     overflow-x: hidden;
     background-color: #0F0F0F;
+    position: fixed;
+    height: 0px;
+    overflow-y: scroll !important;
 }
 
 
@@ -81,7 +84,7 @@ form{
     height: 40px;
     position: relative;
     bottom: -9px;
-    right: 111px;
+    right: -120px;
     display: flex;
     flex-direction: row;
     border-radius: 40px 0 0 40px;
@@ -92,6 +95,7 @@ form{
 .right-nav-buttons{
   width: 135px;
   height: max-content;
+  margin-left:450px;
   
 }
 a.icons-a{
@@ -129,7 +133,7 @@ nav.topnav{
   padding-left: 16px;
   align-content: center;
   display: flex;
-  background-color:#383838;
+  background-color:#181818;
   border-radius: 30px;
   cursor: pointer;
   position: relative;
@@ -142,9 +146,6 @@ nav.topnav{
   right: 8px;
 }
 
-.mic:hover {
-    background-color: #383838;
-}
 yt-button{
     margin: 0px;
     color: #fff;
@@ -155,7 +156,14 @@ yt-button{
     box-sizing: border-box;
     background-color: #0F0F0F;
 }
+yt-button:hover{
+    background-color: #b7b7b725;
 
+
+}
+.mic-a:hover{
+    background-color:#b7b7b725
+}
 yt-button:hover{
     /* background-color: #272727; */
     border-radius: 100px;
@@ -174,10 +182,6 @@ a yt-logo{
     display: flex;
     flex-direction: row;
     align-self: center;
-}
-
-.mic:hover{
-  background-color: rgb(160, 160, 160);
 }
 
 yt-logo-icon{
@@ -255,7 +259,6 @@ yt-logo-icon{
   margin-bottom: 1.5rem;
 }
 
-
 .nav-footer a {
   color: #9D9D9D;
   text-decoration: none;
@@ -327,7 +330,14 @@ yt-logo-icon{
 .resize{
   fill: white;
 }
-
+.details{
+  display: flex;
+  margin: 0px;
+  position: relative;
+  cursor: pointer;
+  flex: auto;
+  flex-direction: row;
+}
 .topnav-search-icon-btn{
     border: 1px solid hsl(0deg 0% 19%);
     background-color:hsl(0deg 0% 100% / 8%);
@@ -357,4 +367,79 @@ background: #0F0F0F;
   width: 24px;
   height: 24px;
   fill: white;
+}
+video-body{
+    width: 100%;
+    padding-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-left: 147px;
+    margin-left: 240px;
+    margin-top: 50px;
+    height: 1200px;
+    position:sticky
+}
+
+row-1{
+    height: 300px;
+    width: max-content;
+    margin-left: -136px;
+    display: flex;
+    flex-direction: row;
+}
+
+/* .video{
+    height: 260px;
+    width: 150px;
+} */
+
+.thumbnail{
+    height: 166px;
+    width: 295px;
+    border-radius: 20px;
+}
+.avatar-link{
+  height: 36px;
+  margin-top: 12px;
+  margin-right: 12px;
+  border-radius: 20px;
+}
+.title-info{
+  overflow-x: hidden;
+  padding-right: 24px;
+  /* padding-bottom: -40px; */
+  margin-bottom: -20px;
+}
+.font-title{
+  color: white;
+  margin: 12px 0 4px 0;
+  margin-bottom: 6px;
+  height: 40px;
+  width: 224px;
+  font-size: 16px;
+}
+
+.video-body {
+  width: 80%;
+  position: relative;
+  overflow-y: scroll;
+  margin-top: -50px;
+}
+
+.videos {
+  /* position: absolute; */
+  padding-left: 75px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(100px, 1fr));
+  margin-top: 50px;
+  width: 90%;
+  /* grid-gap: 10px; */
+  grid-column-gap: -50px;
+  grid-row-gap: 30px;
+  margin-top: 10px;
+}
+
+.video {
+  scale: 0.9;
 }
